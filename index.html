@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>최진호 웹 개발자 포트폴리오</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <link rel="stylesheet" href="./pofol_CSS/body.css">
+    <link rel="stylesheet" href="./pofol_CSS/index.css">
+    <link rel="stylesheet" href="./pofol_CSS/progress.css">
+
+    <link rel="shortcut icon" href="./img/mark.PNG"> <!-- 페이지 마크-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&amp;
+        family=Do+Hyeon&amp;family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&amp;family=Kanit&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="shortcut icon" href="img/farvicon/apple-icon-72x72.png">
+
+    <script src="./pofol_JS/jquery-3.5.1.min.js"></script>
+    <script src="./pofol_JS/jquery.fittext.js"></script>
+    <script src="./pofol_JS/jquery.lettering.js"></script>
+    <script src="./pofol_JS/core.js"></script>
+
+    <style type="text/css">
+        .Typewriter__cursor{-webkit-animation:Typewriter-cursor 1s infinite;
+        animation:Typewriter-cursor 1s infinite;margin-left:1px}
+        @-webkit-keyframes Typewriter-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}
+        @keyframes Typewriter-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}
+    </style>
+
+    <script src="./pofol_JS/jquery.textillate.js"></script>
+    <script src="./pofol_JS/progressbar.js"></script>
+    <script src="./pofol_JS/jquery.smooth-scroll.js"></script>
+    <script src="./pofol_JS/morphext.js"></script>
+    <script src="./pofol_JS/jquery.twentytwenty.js"></script>
+    <script src="./pofol_JS/jquery.event.move.js"></script>
+    <script src="./pofol_JS/wow.js"></script>
+    <script src="./pofol_JS/portfolio.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer="" data-deferred="1"></script>
+</head>
+<body>
+    
+    <div class="aside" style="display: block;">TOP</div>
+
+    <nav class="nav on">
+        <ul>
+            <li class="on"><a href="#home">Home</a></li>
+            <li class=""><a href="#about">About</a></li>
+            <li class=""><a href="#work-web">Portfolio(Web)</a></li>
+            <li class=""><a href="#work-des">Portfolio(Program)</a></li>
+            <li class=""><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section home">
+            <div class="videowrapper">
+                <video width="100%" height="969px" autoplay="" muted="" loop="">
+                    <source src="./img/main.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- <h2>Welcome to my portfolio</h2> -->
+            <div id="app">
+                <span class="Typewriter__wrapper"></span>
+                <span class="Typewriter__cursor">|</span>
+            </div>
+            <p>Programmer JINHO'S portfolio</p>
+            <p>
+                <span id="js-rotating" class="morphext">
+                    <span class="animated bounceIn">{코드}안에서, {실현}하다</span>
+                </span>
+            </p>
+        
+        </div>   
+        <div class="section about">
+            <div class="txt">
+                <h2>ABOUT <span>ME</span></h2>
+            <p>안녕하세요. 풀스택 개발자를 지향하는 최진호입니다.</p>
+            </div>
+            
+            <div class="left">
+                <img src="./img/lion.gif" alt="프로필" style="top: -20px; position: relative;">
+            </div>
+            <div class="right">
+                <div class="content-box">
+                    <div class="box">
+                        <h2>PROFILE</h2>
+                        <div class="txt-box">
+                            <p>NAME</p>
+                            <p>AGES</p>
+                            <p>ADDRESS</p>
+                            <p>EMAIL</p>
+                        </div>
+                        <div class="txt-box">
+                            <p>최진호</p>
+                            <p>27(1995.11.11)</p>
+                            <p>경기도 수원시</p>
+                            <p>cjho0919@naver.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="box">
+                        <h2>&nbsp;</h2> 
+                        <div class="txt-box">
+                            <p>경력</p>
+                            <p>학력</p>
+                        </div>
+                        <div class="txt-box">
+                            <p><a href="https://www.robostar.co.kr/sites/kr/index.do" target="_blnk">Robostar(의료기기 개발)</a> 2019.03 ~ 2020.03</p>
+                            <p>대림대학교 자동화시스템과(3년제) 졸업</p>
+                            <p>학점은행제 컴퓨터공학과(4년제) 2022.01 수료 예정</p>
+                            <p>스프링 클라우드를 활용한 응용 SW 개발자 양성 수료</p>
+                            <p>정보처리기사 2022.02 취득 예정</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box" id="skill">
+                    <h2>MY ABILITIES</h2>
+                    <div class="progress-area">
+                        <div id="html" class="progress" style="position: relative;">HTML
+                            <svg viewBox="0 0 100 3" preserveAspectRatio="none" style="display: block; width: 35%;"></svg>
+                        </div>
+                        
+                        <div id="css" class="progress" style="position: relative;">CSS
+                            <svg viewBox="0 0 100 3" preserveAspectRatio="none" style="display: block; width: 35%;"></svg>
+                        </div>
+
+                        <div id="js" class="progress" style="position: relative;">JS
+                            <svg viewBox="0 0 85.7 3" preserveAspectRatio="none" style="display: block; width: 35%;"></svg>
+                        </div>
+
+                        <div id="java" class="progress" style="position: relative;">JAVA
+                            <svg viewBox="0 0 85.7 3" preserveAspectRatio="none" style="display: block; width: 35%;"></svg>
+
+                        </div>
+
+                        <div id="GitHub" class="progress" style="position: relative;">GitHub
+                            <svg viewBox="0 0 100 3" preserveAspectRatio="none" style="display: block; width: 35%;"></svg>
+                        </div>
+
+                        <div id="op" class="progress" style="position: relative;">EXCEL
+                            <svg viewBox="0 0 100 3" preserveAspectRatio="none" style="display: block; width: 35%;"></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section portfolio">
+            <h2>PORTFOLIO<span>(web)</span></h2>
+            <p>HTML, CSS, JS를 활용한 포트폴리오</p>
+
+            <div class="container">
+                <div class="pc wow fadeInUp wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <img src="img/pc111.png" alt="pc">
+                    <h3>Web <span> 포트폴리오 제작</span></h3>
+                    <p>HTML, CSS, JS를 이용하여 제작한 포트폴리오입니다.</p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section portfolio2">
+            <h2>PORTFOLIO<span>(Program)</span></h2>
+            <div class="book" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <h3>도서관리 <span> 프로그램 제작</span></h3>
+                <p>JAVA, DB를 이용하여 제작한 도서관리 프로그램입니다.</p>
+            </div>
+            
+            <div class="container">    
+                    <div class="item-wrap">
+                        <div class="item wow bounceInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/ERD.png" alt="200x200">
+                        </div>
+                        <div class="item wow bounceInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/Usecase diagram.png">
+                        </div>
+                        <div class="item wow bounceInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/실행 화면.png" alt="200x200">
+                        </div>
+                        <!-- <div class="item wow bounceInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/ERD.png" alt="200x200">
+                        </div> -->
+                    
+                        <div class="window"></div>
+                        <div class="window-content">
+                            <img src="#" alt="modal-detail">
+                        </div>
+                    </div>
+                </div>
+                <div class="book wow fadeInUp wow fadeInUp " data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <div class="btn">
+                        <ul>
+                            <li id="button_3"><a href="#">상세페이지</a></li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="section portfolio3">
+            <h2>PORTFOLIO<span>(Program)</span></h2>
+            <div class="book" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <h3>AdvanSureTM_I3 <span> 의료기기 제작</span></h3>
+                <p>혈액분석을 위해 제작한 분석 기기입니다.</p>
+            </div>
+            
+            <div class="container">    
+                    <div class="item-wrap">
+                        <div class="item1 wow bounceInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/boold1.PNG" alt="200x200">
+                        </div>
+                        <div class="item1 wow bounceInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/boold2.PNG">
+                        </div>
+                        <div class="item1 wow bounceInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/boold3.PNG" alt="200x200">
+                        </div>
+                        <div class="item1 wow bounceInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/boold4.PNG" alt="200x200">
+                        </div>
+                        <div class="item1 wow bounceInUp" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/boold5.PNG" alt="200x200">
+                        </div>
+                        <div class="item1 wow bounceInUp" data-wow-delay="1.1s" style="visibility: visible; animation-delay: 1.1s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/boold6.PNG" alt="200x200">
+                        </div>
+                        <div class="item1 wow bounceInUp" data-wow-delay="1.3s" style="visibility: visible; animation-delay: 1.3s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/boold7.PNG" alt="200x200">
+                        </div>
+                        <div class="item1 wow bounceInUp" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: bounceInUp;">
+                            <img src="../portfolio/img/boold8.PNG" alt="200x200">
+                        </div>
+
+                        <div class="window"></div>
+                        <div class="window-content">
+                            <img src="#" alt="modal-detail">
+                        </div>
+                    </div>
+                </div>
+                <div class="book wow fadeInUp wow fadeInUp " data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <div class="btn">
+                        <ul>
+                            <li id="button_4"><a href="#">참조페이지</a></li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="section contact">
+            <div class="content">
+                <div class="qr">
+                    <img class="nuimg" src="./img/contactme.PNG" alt="qr" style="width: 600px; top: 80px; position: relative;">
+                    <div id="contact" class="container-lg">
+                        <div style="font-size: 20px;">
+                            <div class="col-md-5 align-content-center mt-5 aos-init aos-animate" data-aos="fade-right">
+                                <div class="p-3" style="right: 200px; top: 127px; position: relative;">
+                                    <h3 class="text-center mb-4">이메일</h3>
+                                    <p>E-mail: cjho0919@naver.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 align-content-center mt-5 aos-init aos-animate" data-aos="fade-left" data-aos-offest="300">
+                                <div class="p-3" style="left: 200px; top: 68px; position: relative;">
+                                    <h3 class="text-center mb-4">전화번호</h3>
+                                    <p>P-Number : 010-7931-5249</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="footer">
+                    <p><b>COPYRIGHT 2021. CHIOJINHO</b> All RIGHTS RESERVED.</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="indicator" style="display: block;">
+            <ul>
+                <li class=""><a href="#">●</a></li>
+                <li class=""><a href="#">●</a></li>
+                <li class=""><a href="#">●</a></li>
+                <li class="on"><a href="#">●</a></li>
+                <li class=""><a href="#">●</a></li>
+            </ul>
+        </div>
+
+    <script src="./pofol_JS/pofol.js"></script>
+</body>
+</html>

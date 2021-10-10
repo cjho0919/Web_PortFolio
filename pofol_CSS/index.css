@@ -1,0 +1,730 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Openas';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/Openas.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+html, body{
+    width: 100%; 
+    height: 100%;
+}
+
+/* 스크롤바 설정*/
+body::-webkit-scrollbar{
+    width: 15px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #ffffffbb;
+    border-radius: 5px;
+    
+}
+body::-webkit-scrollbar-track{
+    background-color: #7c7c7c;
+}
+
+ul{list-style: none;}
+a{text-decoration: none; color: #000; font-family: 'Noto Sans KR', sans-serif;}
+
+.wrap {
+	width:100vw;
+    height:100vh;
+  }
+  .videowrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+  .videowrapper video {
+      position: relative;
+      top: -110px;
+      left: 0;
+      height: 100%;
+      border: none;
+}
+
+.nav{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.nav.on{opacity: 1;}
+
+.nav ul{
+    
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.nav ul li{
+    float: left;
+    width: 20%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+.nav ul li a{
+    color: #d8d8d8;
+    font-family: 'Kanit', sans-serif;
+}
+.nav ul li.on a{
+    color: #fff;
+    font-weight: bold;
+}
+.home h1{
+    z-index: 99;
+}
+
+#app{
+    position: absolute;
+    bottom: 17.4%;
+    left: 5.7%;
+    font-size: 3.4vw;
+    font-weight: 600;
+    font-family: 'Kanit', sans-serif;
+    color: #393939;
+    letter-spacing: 1px;
+    height: 16%;
+}
+
+/* Welcome to my portfolio 라인 표시*/
+#app::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #393939;
+    bottom: -10%;
+    left: 0;
+    top: 60%;
+}
+
+/* Programmer JINHO'S portfolio 글자*/
+.home p{
+    font-size: 1.2vw;
+    font-family: 'NEXON Lv2 Gothic';
+    color: #393939;
+    position: absolute;
+    left: 15.5%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    transition: opacity 1s;
+    height: 7%;
+}
+
+/* 빨간 중앙글씨*/
+.home p:nth-of-type(2){
+    position: absolute;
+    left: 49%;
+    height: 20%;
+    color: #f8978f;
+    font-size: 1vw;
+    bottom: 29%;
+    font-style: normal;
+}
+
+.section{
+    overflow: hidden;
+    position: relative;
+}
+.about .txt{
+    width: 100%;
+}
+.about .txt h2{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 1.6vw;
+    font-family: 'NEXON Lv2 Gothic';
+}
+.about h2 span{
+    font-weight: normal;
+}
+.about .txt p{
+    text-align: center;
+    color: #767676;
+    margin-top: 10px;
+    font-family: 'NEXON Lv2 Gothic';
+    
+}
+.about .left{
+    box-sizing: border-box;
+    padding: 5%;
+    float: left;
+    width: 47vw;
+    text-align: center;
+    padding-left: 25%;
+}
+
+.about .left img{
+    width: 100%;
+    margin: 2vh 0;
+}
+
+.about .right{
+    font-family: 'SEBANG_Gothic_Bold';
+    float: left;
+    width: 47vw;
+    text-align: center;
+}
+.about .right .content-box{float: left;
+    padding-top: 5%;
+    margin-top: 6.5vh;
+}
+.about .right .box > div{
+    float: left;
+    margin-right: 20px;
+    margin-top: 24px;
+}
+.about .right .box > div:nth-of-type(1){
+    font-size: 1vw;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+.about .right .box > div:nth-of-type(2){
+    font-size: 1vw;
+    font-family: 'NEXON Lv2 Gothic';
+    color: #767676;
+    letter-spacing: 0.5px;
+}
+.about .right .box h2{
+    font-size: 1.2vw;
+    line-height: 1.5;
+    text-align: left;
+}
+.about .right .box .txt-box{
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 35px;
+}
+.about .right .box .txt-box p .txt-box a{
+    letter-spacing: 1.5px;
+}
+.about .right .content-box:nth-child(3){
+    clear: both;
+    padding-top: 0;
+    font-family: 'SEBANG_Gothic_Bold';
+    text-align: left;
+    
+}
+.about .right .content-box:nth-child(3) h2{
+    font-size: 1.2vw;
+}
+/* my abilties 설정*/
+.progress-area{
+    width: 600px;
+    height: 500px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.progress-area div:nth-child(1){
+    margin-top: 0;
+}
+.progress-area div{
+    margin-top: 20px;
+}
+
+.portfolio h2,
+.portfolio2 h2,
+.portfolio3 h2{
+    font-size: 1.6vw;
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'NEXON Lv2 Gothic'; 
+}
+
+.portfolio SPAN{
+    font-weight: normal;
+}
+.portfolio p{
+    text-align: center;
+    color: #767676;
+    margin-top: 10px;
+    font-family: 'NEXON Lv2 Gothic';
+    margin-bottom: 30px;
+}
+.pc{
+    width: 700px;
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+/*포폴1 모니터 화면 내용 설정*/
+.pc:nth-child(1):after{
+    content: "";
+    left: 50.1%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 19px;
+    width: 614px;
+    height: 347px;
+    background: url("../img/homepage.jpg") 45% top no-repeat;
+    background-size: 100%;
+}
+
+/* 포폴1 이벤트 속성 설정 */
+.pc:hover::after{
+    transition: 10s; 
+    background-position: 0 bottom;
+}
+.portfolio .container .pc p,
+.portfolio .container {
+    color: #d8d8d8;
+}
+.pc h3{
+    text-align: center;
+    font-size: 1.25vw;
+    font-family: 'NEXON Lv2 Gothic';
+    color: #767676;
+    margin-top: 10px;
+}
+
+.pc img{width: 100%;}
+/*
+ .pc .btn{
+    margin-top: 20px;
+    margin: 0 auto;
+}
+.pc .btn ul{overflow: hidden;}
+
+.pc .btn ul li{
+    float: left;
+    margin-left: 212px;
+}
+.pc .btn ul li:nth-child(2){
+    margin-left: 10px;
+}
+.pc .btn ul li a{
+    color: #D13F31;
+    font-size: 0.8vw;
+    font-family: 'NEXON Lv2 Gothic';
+    border: 1px solid #D13F31;
+    padding: 8px 20px;
+    display: inline-block;
+    width: 92px;
+    text-align: center;
+} */
+
+
+/* 포폴1 이벤트 속성 설정 */
+
+.book h3{
+    text-align: center;
+    font-size: 1.25vw;
+    font-family: 'NEXON Lv2 Gothic';
+    color: #767676;
+    margin-top: 10px;
+}
+
+.book p{
+    text-align: center;
+    font-family: 'NEXON Lv2 Gothic';
+    color: #d8d8d8;
+    margin-top: 10px;
+}
+
+.book .btn{
+    margin-top: 20px;
+    margin: 0 auto;
+}
+.book .btn ul{overflow: hidden;}
+
+.book .btn ul li{
+    float: left;
+    margin-left: 46.5%;
+    padding-top: 50px;
+}
+.book .btn ul li:nth-child(2){
+    margin-left: 10px;
+    
+}
+.book .btn ul li a{
+    color: #D13F31;
+    font-size: 0.8vw;
+    font-family: 'NEXON Lv2 Gothic';
+    border: 1px solid #D13F31;
+    padding: 8px 20px;
+    display: inline-block;
+    width: 92px;
+    text-align: center;
+}
+
+.portfolio2 h2{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'NEXON Lv2 Gothic';
+}
+
+.portfolio2 SPAN{
+    font-weight: normal;
+}
+.portfolio2 .container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-left: 19%;
+}
+
+.portfolio2 .container .item-wrap{
+    margin-top: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+.portfolio2 .container .item-wrap .item,
+.portfolio2 .container .item-wrap .item-box{
+    width: 23%;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+}
+.portfolio2 .container .item-wrap .item::after{
+    content: "";
+    position: absolute;
+    background-color: #D13F31;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    top: 0;
+}
+.portfolio2 .container .item-wrap .item img
+{
+    width: 100%;
+    height: 330px;
+    border-radius: 30px;
+}
+.portfolio2 .container .item-wrap .item:hover img{
+    transform: scale(1.1);
+    transition: 0.2s;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.portfolio2 .container .item-wrap .item-box img{
+    width: 100%;
+    height: 420px;
+    border-radius: 30px;
+}
+
+.portfolio2 .container .item-wrap > div:nth-child(9){
+    margin-left: 30px;
+}
+.portfolio2 .container .item-wrap .item:nth-child(4n + 1){
+    margin-left: 30px;
+}
+<!-- -->
+.portfolio3 h2{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'NEXON Lv2 Gothic';
+}
+
+.portfolio3 SPAN{
+    font-weight: normal;
+}
+.portfolio3 .container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.portfolio3 .container .item-wrap{
+    margin-top: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+.portfolio3 .container .item-wrap .item1,
+.portfolio3 .container .item-wrap .item1-box{
+    width: 23%;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+}
+.portfolio3 .container .item-wrap .item1::after{
+    content: "";
+    position: absolute;
+    background-color: #D13F31;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    top: 0;
+}
+.portfolio3 .container .item-wrap .item1 img
+{
+    width: 100%;
+    height: 330px;
+    border-radius: 30px;
+}
+.portfolio3 .container .item-wrap .item1:hover img{
+    transform: scale(1.1);
+    transition: 0.2s;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.portfolio3 .container .item-wrap .item1-box img{
+    width: 100%;
+    height: 420px;
+    border-radius: 30px;
+}
+
+.portfolio3 .container .item-wrap > div:nth-child(9){
+    margin-left: 30px;
+}
+.portfolio3 .container .item-wrap .item1:nth-child(4n + 1){
+    margin-left: 30px;
+}
+
+.window{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    left: 0;
+    top: 0;
+    display: none;
+}
+.window-content{
+    position: fixed;
+    z-index: 1;
+    width: auto;
+    height: 80%;
+    font-size: 0;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+    overflow-y: scroll;
+    display: none;
+    
+}
+
+.window1{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    left: 0;
+    top: 0;
+    display: none;
+}
+.window-content1{
+    position: fixed;
+    z-index: 1;
+    width: auto;
+    height: 80%;
+    font-size: 0;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+    overflow-y: scroll;
+    display: none;
+    
+}
+
+.contact{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+.contact .content h2{
+    font-size: 1.6vw;
+    padding-top: 120px;
+    text-align: center;
+    font-family: 'NEXON Lv2 Gothic'; 
+}
+.contact h2 span{
+    font-weight: normal;
+}
+
+/*contact me 설정*/
+.contact .qr{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    margin-top: 30px;
+    height: 100px;
+}
+
+/*맨아래 하단 설정*/
+.contact .content{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #F9F7F0;
+    margin-top: 150px;
+    position: relative;
+}
+
+/*맨아래 하단 설정*/
+.contact .content .footer{
+    width: 100%;
+    height: 150px;
+    background-color: #585858;
+    text-align: center;
+    z-index: 9;
+    position: absolute;
+    bottom: 150px;
+}
+.contact .footer p{
+    line-height: 160px;
+    text-align: center;
+    font-size: .8vw;
+    color: #fff;
+}
+.aside{
+    position: fixed;
+    width: 45px;
+    height: 45px;right: 20px;
+    bottom: 20px;
+    border-radius: 45px;
+    cursor: pointer;
+    display: none;
+    border: 0.5px solid #292929;
+    line-height: 45px;
+    text-align: center;
+    font-weight: bold;
+    color: #292929;
+    font-size: 14px;
+    z-index: 99;
+}
+.indicator{
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    font-size: 11px;
+}
+.indicator ul li{
+    margin: 8px 0;
+    cursor: pointer;
+}
+.indicator ul li a{
+    color: #D13F31;
+}
+.indicator ul li.on a{
+    color: #292929;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px){
+    #app::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #393939;
+        bottom: -10%;
+        left: 0
+    }
+    .about img{
+        width: 100%;
+    }
+    .about .txt h2,
+    .portfolio h2,
+    .portfolio2 h2{
+        font-size: 2.3vw;
+    }
+    .about .right .content-box .box{
+        position: relative;
+        top: -17px;
+    }
+    .about .right .content-box:nth-child(2){
+        position: relative;
+        top: -60px;
+    }
+    #skill{
+        width: 300px;
+        position: relative;
+        left: -260px;
+        top: -100px;
+    }
+    .portfolio{
+        position: relative;
+        top: -120px;
+    }
+    .portfolio2{
+        position: relative;
+        top: -160px;
+    }
+    .portfolio2 .container .item-wrap .item{
+        width: 300px;
+        height: 300px;
+        
+    }
+    .portfolio2 .container .item-wrap .item img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio2 .container .item-wrap > div:nth-child(9){
+        margin-left: 0px;
+    }
+    .portfolio2 .container .item-wrap .item:nth-child(4n + 1){
+        margin-left: 0px;
+    }
+    .portfolio3{
+        position: relative;
+        top: -160px;
+    }
+    .portfolio3 .container .item-wrap .item1{
+        width: 300px;
+        height: 300px;
+        
+    }
+    .portfolio3 .container .item-wrap .item1 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio3 .container .item-wrap > div:nth-child(9){
+        margin-left: 0px;
+    }
+    .portfolio3 .container .item-wrap .item1:nth-child(4n + 1){
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+}
+
