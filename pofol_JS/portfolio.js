@@ -133,9 +133,9 @@ function pro(id, per){
     const $window = $(".window");
     const $window_content = $(".window-content");
     const img_list = [
-        "../portfolio/img/ERD.png",
-        "../portfolio/img/Usecase diagram.png",
-        "../portfolio/img/실행 화면.png",
+        "img/ERD.png",
+        "img/Usecase diagram.png",
+        "img/실행 화면.png",
     ]
 
     // 이미지 확대 해주는 설정 포폴3
@@ -143,14 +143,14 @@ function pro(id, per){
     const $window1 = $(".window");
     const $window_content1 = $(".window-content");
     const img_list1 = [
-        "../portfolio/img/boold1.PNG",
-        "../portfolio/img/boold2.PNG",
-        "../portfolio/img/boold3.PNG",
-        "../portfolio/img/boold4.PNG",
-        "../portfolio/img/boold5.PNG",
-        "../portfolio/img/boold6.PNG",
-        "../portfolio/img/boold7.PNG",
-        "../portfolio/img/boold8.PNG"
+        "img/boold1.PNG",
+        "img/boold2.PNG",
+        "img/boold3.PNG",
+        "img/boold4.PNG",
+        "img/boold5.PNG",
+        "img/boold6.PNG",
+        "img/boold7.PNG",
+        "img/boold8.PNG"
     ]
 
     //포폴2
