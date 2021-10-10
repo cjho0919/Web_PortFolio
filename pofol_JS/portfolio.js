@@ -14,7 +14,7 @@ $("document").ready(function(){
     $("#js-rotating").Morphext({
         animation: "bounceIn",
         separator: ",",
-        speed: 2000,
+        speed: 10000,
         complete: function () {
         }
     });
