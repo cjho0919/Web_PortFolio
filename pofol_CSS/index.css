@@ -254,7 +254,8 @@ a{text-decoration: none; color: #000; font-family: 'Noto Sans KR', sans-serif;}
 
 .portfolio h2,
 .portfolio2 h2,
-.portfolio3 h2{
+.portfolio3 h2,
+.portfolio4 h2{
     font-size: 1.6vw;
     margin-top: 150px;
     text-align: center;
@@ -380,7 +381,7 @@ a{text-decoration: none; color: #000; font-family: 'Noto Sans KR', sans-serif;}
     width: 92px;
     text-align: center;
 }
-
+/* 2 */
 .portfolio2 h2{
     margin-top: 150px;
     text-align: center;
@@ -446,7 +447,7 @@ a{text-decoration: none; color: #000; font-family: 'Noto Sans KR', sans-serif;}
 .portfolio2 .container .item-wrap .item:nth-child(4n + 1){
     margin-left: 30px;
 }
-<!-- -->
+/* 3*/
 .portfolio3 h2{
     margin-top: 150px;
     text-align: center;
@@ -511,6 +512,72 @@ a{text-decoration: none; color: #000; font-family: 'Noto Sans KR', sans-serif;}
 .portfolio3 .container .item-wrap .item1:nth-child(4n + 1){
     margin-left: 30px;
 }
+/* 4 */
+.portfolio4 h2{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'NEXON Lv2 Gothic';
+}
+
+.portfolio4 SPAN{
+    font-weight: normal;
+}
+.portfolio4 .container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+
+}
+
+.portfolio4 .container .item-wrap{
+    margin-top: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+.portfolio4 .container .item-wrap .item2,
+.portfolio4 .container .item-wrap .item2-box{
+    width: 23%;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+}
+.portfolio4 .container .item-wrap .item2::after{
+    content: "";
+    position: absolute;
+    background-color: #D13F31;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    top: 0;
+}
+.portfolio4 .container .item-wrap .item2 img
+{
+    width: 100%;
+    height: 330px;
+    border-radius: 30px;
+}
+.portfolio4 .container .item-wrap .item2:hover img{
+    transform: scale(1.1);
+    transition: 0.2s;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.portfolio4 .container .item-wrap .item2-box img{
+    width: 100%;
+    height: 420px;
+    border-radius: 30px;
+}
+
+.portfolio4 .container .item-wrap > div:nth-child(9){
+    margin-left: 30px;
+}
+.portfolio4 .container .item-wrap .item2:nth-child(4n + 1){
+    margin-left: 30px;
+}
 
 .window{
     position: fixed;
@@ -546,6 +613,30 @@ a{text-decoration: none; color: #000; font-family: 'Noto Sans KR', sans-serif;}
     display: none;
 }
 .window-content1{
+    position: fixed;
+    z-index: 1;
+    width: auto;
+    height: 80%;
+    font-size: 0;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+    overflow-y: scroll;
+    display: none;
+    
+}
+
+.window2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    left: 0;
+    top: 0;
+    display: none;
+}
+.window-content2{
     position: fixed;
     z-index: 1;
     width: auto;
@@ -661,7 +752,9 @@ a{text-decoration: none; color: #000; font-family: 'Noto Sans KR', sans-serif;}
     }
     .about .txt h2,
     .portfolio h2,
-    .portfolio2 h2{
+    .portfolio2 h2,
+    .portfolio3 h2,
+    .portfolio4 h2{
         font-size: 2.3vw;
     }
     .about .right .content-box .box{
@@ -720,6 +813,26 @@ a{text-decoration: none; color: #000; font-family: 'Noto Sans KR', sans-serif;}
         margin-left: 0px;
     }
     .portfolio3 .container .item-wrap .item1:nth-child(4n + 1){
+        margin-left: 0px;
+    }
+    .portfolio4{
+        position: relative;
+        top: -160px;
+    }
+    .portfolio4 .container .item-wrap .item2{
+        width: 300px;
+        height: 300px;
+        
+    }
+    .portfolio4 .container .item-wrap .item2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio4 .container .item-wrap > div:nth-child(9){
+        margin-left: 0px;
+    }
+    .portfolio4 .container .item-wrap .item2:nth-child(4n + 1){
         margin-left: 0px;
     }
 }
