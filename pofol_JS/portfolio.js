@@ -133,9 +133,9 @@ function pro(id, per){
     const $window = $(".window");
     const $window_content = $(".window-content");
     const img_list = [
-        "img/ERD.png",
-        "img/Usecase diagram.png",
-        "img/실행 화면.png",
+        "../portfolio/img/ERD.png",
+        "../portfolio/img/Usecase diagram.png",
+        "../portfolio/img/실행 화면.png",
     ]
 
     // 이미지 확대 해주는 설정 포폴3
@@ -143,14 +143,28 @@ function pro(id, per){
     const $window1 = $(".window");
     const $window_content1 = $(".window-content");
     const img_list1 = [
-        "img/boold1.PNG",
-        "img/boold2.PNG",
-        "img/boold3.PNG",
-        "img/boold4.PNG",
-        "img/boold5.PNG",
-        "img/boold6.PNG",
-        "img/boold7.PNG",
-        "img/boold8.PNG"
+        "../portfolio/img/boold1.PNG",
+        "../portfolio/img/boold2.PNG",
+        "../portfolio/img/boold3.PNG",
+        "../portfolio/img/boold4.PNG",
+        "../portfolio/img/boold5.PNG",
+        "../portfolio/img/boold6.PNG",
+        "../portfolio/img/boold7.PNG",
+        "../portfolio/img/boold8.PNG"
+    ]
+
+    // 이미지 확대 해주는 설정 포폴4
+        const $img2 = $(".item2");
+        const $window2 = $(".window");
+        const $window_content2 = $(".window-content");
+        const img_list2 = [
+            "../portfolio/img/jejuERD.PNG",
+            "../portfolio/img/jejuusecase.PNG",
+            "../portfolio/img/jejumain.PNG",
+            "../portfolio/img/jeju1.PNG",
+            "../portfolio/img/jeju2.PNG",
+            "../portfolio/img/jeju3.PNG",
+            "../portfolio/img/jeju4.PNG"
     ]
 
     //포폴2
@@ -191,7 +205,27 @@ function pro(id, per){
             $(".home").css("opacity", 0)
             
     })
-    //클릭 포폴2,3
+    //포폴3
+        $img2.click(function(e1){
+            e1.preventDefault()
+            e1.stopPropagation()
+            let i = $(this).index();
+            pos = $(window).scrollTop();
+            $window2.slideDown()
+            $window_content2.slideDown();
+            $window_content2.find("img").attr("src", img_list2[i])
+    
+            $('html, body').css({'overflow': 'hidden'}); // 모달팝업 중 html,body의 scroll을 hidden시킴        
+            $(window).on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지     
+                event.preventDefault();     event.stopPropagation();     return false; });
+                    $("html, body").scrollTop(pos)
+                pos2 = pos;
+    
+                $(".home").css("opacity", 0)
+                
+    })
+
+    //클릭 포폴2,3,4
     $window.click(function(){
         $window.slideUp();
         $window_content.slideUp();
@@ -203,6 +237,14 @@ function pro(id, per){
     $window1.click(function(){
         $window1.slideUp();
         $window_content1.slideUp();
+        $('html, body').css({'overflow': 'visible'}); 
+        $("html, body").scrollTop(pos2)
+        
+        $(".home").css("opacity", 1)
+    })
+    $window2.click(function(){
+        $window2.slideUp();
+        $window_content2.slideUp();
         $('html, body').css({'overflow': 'visible'}); 
         $("html, body").scrollTop(pos2)
         
@@ -228,6 +270,11 @@ function pro(id, per){
      $("#button_4").click(function(e){
         e.preventDefault();
         window.open('https://www.lmce-kslm.org/html/?pmode=academySponsor&smode=view&seq=224','','width=1920 height=1334')
+     })
+
+     $("#button_5").click(function(e){
+        e.preventDefault();
+        window.open('https://github.com/JejuislandToyProject/JejuIsland','','width=1920 height=1334')
      })
 
      setTimeout(function(){
